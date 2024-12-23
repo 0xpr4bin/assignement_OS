@@ -1,4 +1,4 @@
-Explanation of "Everything is a File" in the Context of Our cp Code
+Explanation of "Everything is a File" in the Context of Our my_cp Code
 
 Overview:
 In Linux, the principle that "everything is a file" allows us to handle various types of resources uniformly. This concept is evident in our cp command implementation, which can copy not only regular files but also directories and devices.
