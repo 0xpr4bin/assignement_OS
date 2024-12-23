@@ -13,3 +13,7 @@ Key Points Related to Our Code:
 
     Device Files:
         If our code were extended to handle device files (found in /dev), we could use the same copy_file() function to read from and write to these devices. This shows the flexibility of the "everything is a file" philosophy, as we could treat hardware devices just like regular files.
+
+
+Our code uses a fixed-size buffer (e.g., char buffer[1024]) for reading and writing data. This is a common practice in memory management, as it minimizes the number of read/write system calls, which can be costly in terms of performance.
+The OS manages the memory allocated for the buffer and ensures that it is available during the execution of the program. If we were to copy very large files, we might consider dynamically allocating memory using malloc() to accommodate varying sizes more efficiently.
